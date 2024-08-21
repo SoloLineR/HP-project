@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import { characterApi } from "../models/character/charater"
 import CharactersList_Item from "./CharactersList_Item"
 import { Character } from "../shared/types"
+import LoaderSpinner from "./loader/LoaderSpinner"
 
 export default function CharactersList() {
 
@@ -41,7 +42,7 @@ export default function CharactersList() {
 
 
 if (isLoading) {
-  return (<div>loading...</div>)
+  return  <LoaderSpinner/>;
  }
   return (
     <div className="container w-1240 mx-auto"> 

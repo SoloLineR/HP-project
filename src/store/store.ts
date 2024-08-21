@@ -1,6 +1,6 @@
 import { configureStore, createAsyncThunk, createSelector, ThunkAction, UnknownAction } from "@reduxjs/toolkit";
 import { baseApi } from "../shared/api";
-import { router } from "../shared/router";
+import { router } from "../app/router";
 import { useDispatch, useSelector, useStore } from "react-redux";
 export const extraArgument = {
     router,

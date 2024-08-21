@@ -6,7 +6,7 @@ export interface Character {
     alternate_names:  string[];
     species:          string;
     gender:           string;
-    house:            string;
+    house:             "Gryffindor" | "Slytherin" | "Ravenclaw" | "Hufflepuff" | ""
     dateOfBirth:      string;
     yearOfBirth:      number;
     wizard:           boolean;
