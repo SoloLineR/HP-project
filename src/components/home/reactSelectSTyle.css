@@ -1,0 +1,39 @@
+.react-select__control {
+    border-radius: 35px  !important;
+    padding: 5px !important;
+    border: 4px solid #ae0001 !important;
+    
+    
+  }
+  .react-select__control:hover {
+    border: 4px solid #eeba30 !important;
+    padding-top: 15px !important;
+  }
+
+  .react-select__option:hover {
+    border: 2px solid #c9c7c7 !important;
+    cursor: pointer !important;
+  } 
+
+  .react-select__control--is-focused { 
+    box-shadow: 0 0 0 1px rgb(214, 30, 30) !important;
+  }
+
+ 
+
+  .react-select__indicator-separator:hover{ 
+    background-color: #e00000!important ;
+  }
+
+  .lightning {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        fill: #FFD700; /* Начальный и конечный цвет */
+    }
+    50% {
+        fill: #FFEA00; /* Цвет в середине анимации */
+    }
+}

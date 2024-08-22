@@ -51,6 +51,14 @@ export default {
       gridColumn:{
         span2:"span 2"
       }
+      ,
+      screens:{
+        'tall': { 'raw': '(min-width: 1050px)' },
+        'infoq': { 'raw': '(max-width: 600px)' },
+      },
+      gridRow:{
+        "infoa":"1 / span 2"
+      }
     }
   },
   plugins: [],

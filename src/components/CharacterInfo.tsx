@@ -17,8 +17,8 @@ export default function CharacterInfo() {
   }
 
   return (
-    <div className={`w-1240  font-HarryPotter  text-2xl ${styelsHP.get(character[0].house)?.[1]} border-4 ${styelsHP.get(character[0].house)?.[2]} ${styelsHP.get(character[0].house)?.[0]} mx-auto rounded-45 p-10 grid grid-cols-info  gap-3 shadow-md`}>
-      <div className="border-4 border-GriffindorGold   rounded-45 flex items-center   col-span2 ">
+    <div className={`max-w-[1240px] font-HarryPotter  text-2xl ${styelsHP.get(character[0].house)?.[1]} border-4 ${styelsHP.get(character[0].house)?.[2]} ${styelsHP.get(character[0].house)?.[0]} mx-auto rounded-45 p-10 grid  gap-3 shadow-md  tall:grid-cols-info`}>
+      <div className="border-4 border-GriffindorGold   rounded-45 flex items-center   tall:col-span2 ">
         <img
           src={character[0].image}
           alt=""
@@ -44,11 +44,11 @@ export default function CharacterInfo() {
       <div className=" border-4 border-GriffindorGold rounded-45 p-10">
         <p>Actor: {character[0].actor}</p>
       </div>
-      <div className=" border-4 border-GriffindorGold flex items-center justify-center gap-5 rounded-45 col-span2 p-10">
+      <div className=" border-4 border-GriffindorGold flex items-center justify-center gap-5 rounded-45 p-10  tall:col-span2  ">
         <p>Alive:{character[0].alive ? "true" : "false"}</p>
         <p>Student: {character[0].hogwartsStudent ? "true" : "false"}</p>
       </div>
-      <div className=" border-4 border-GriffindorGold rounded-45 p-10 col-start-4 row-start-1 row-end-3">
+      <div className=" border-4 border-GriffindorGold rounded-45 p-10  row-start-1 row-end-3  tall:row-infoa   ">
         <p className="font-HarryPotter">Species: {character[0].species}</p>
         <p className="font-HarryPotter">Gender: {character[0].gender}</p>
         <p className="font-HarryPotter">

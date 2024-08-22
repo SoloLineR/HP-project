@@ -45,8 +45,8 @@ if (isLoading) {
   return  <LoaderSpinner/>;
  }
   return (
-    <div className="container w-1240 mx-auto"> 
-        <ul className=" flex  flex-col justify-center">
+    <div className="container max-w-[1240px] mx-auto "> 
+        <ul className=" flex  flex-col justify-center gap-5 ">
           { filtred.map((character)=>(
             <CharactersList_Item key={character.id} character={character}/>
           )  )}
