@@ -21,7 +21,7 @@ export default function CharacterInfo() {
     flex flex-wrap gap-5 justify-center   `}>
       <div className="border-4 border-GriffindorGold   rounded-45 flex items-center   infoq:flex-col   ">
         <img
-          src={character[0].image === "" ? "/logoH.jpeg" : character[0].image }
+          src={character[0].image === "" ? `/HP-project/logoH.jpeg` : character[0].image }
           alt=""
           className="m-4 rounded-45  max-h-[200px]  max-w-[150px] "
         />

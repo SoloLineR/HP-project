@@ -28,7 +28,7 @@ backgroundRepeat: `no-repeat`,
       <Slide arrows={false} >
        {data.map((slideImage, index)=> (
           <div key={index} className='flex flex-col  bg-GriffindorGold  '>
-            <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.image === "" ? "/logoH.jpeg": slideImage.image})` }}>
+            <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.image === "" ? "https://sololiner.github.io/HP-project/logoH.jpeg": slideImage.image})` }}>
             </div>
             <span className=' mx-auto  font-HarryPotter pt-3 text-2xl' >{slideImage.name}</span>
           </div>

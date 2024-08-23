@@ -31,7 +31,7 @@ export default function CharactersList_Item({character}:CharactersList_ItemProps
     <li key={character.id}   className={`border-[4px] p-60  rounded-45 shadow-md flex justify-around ${styelsHP.get(character.house)?.[0]} ${styelsHP.get(character.house)?.[2]}  ${styelsHP.get(character.house)?.[1]} infoq:flex-col infoq:items-center infoq:gap-2` }>
         <div className=" flex flex-col justify-center items-center min-w-[300px]">
         <picture className={` border-[5px]  rounded-3xl shadow-md ${styelsHP.get(character.house)?.[2]}`}>
-            <img src={character.image === "" ? "/logoH.jpeg" : character.image} alt={`${character.name} image`}  className="rounded-2xl   max-h-[200px]   "/>
+            <img src={character.image === "" ? `${import.meta.env.BASE_URL}/logoH.jpeg` : character.image} alt={`${character.name} image`}  className="rounded-2xl   max-h-[200px]   "/>
           
         </picture>
         <p className="font-HarryPotter  text-[30px] pt-3 ">{character.name}</p>

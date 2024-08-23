@@ -16,7 +16,7 @@ const loadStore = () =>
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/",  
     element: (
       <main className=" container mx-auto  max-w-[1240px] flex flex-col min-h-screen px-2">
         <Navbar/>
@@ -76,6 +76,6 @@ export const router = createBrowserRouter([
         element:<SpellDesc/>
       }
 
-    ],
+    ], 
   },
-]);
+],{basename:`${import.meta.env.BASE_URL}`});
