@@ -54,7 +54,7 @@ export default {
       ,
       screens:{
         'tall': { 'raw': '(min-width: 1050px)' },
-        'infoq': { 'raw': '(max-width: 600px)' },
+        'infoq': { 'raw': '(max-width: 750px)' },
       },
       gridRow:{
         "infoa":"1 / span 2"

@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <main className=" container mx-auto  max-w-[1240px] flex flex-col min-h-screen">
+      <main className=" container mx-auto  max-w-[1240px] flex flex-col min-h-screen px-2">
         <Navbar/>
         <Outlet  />
         <footer className="mt-auto">
